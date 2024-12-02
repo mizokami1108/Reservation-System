@@ -20,6 +20,7 @@ export default defineNuxtConfig({
   },
   plugins: ["~/plugins/vuetify.ts"],
   modules: [
+    "@pinia/nuxt",
     (_options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) => {
         // @ts-expect-error

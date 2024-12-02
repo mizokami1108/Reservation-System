@@ -1,6 +1,9 @@
 <template>
-  <div>
-    <nav>ナビゲーションバー</nav>
-    <slot />
-  </div>
+  <NavigationDrawer>
+    <NuxtPage />
+  </NavigationDrawer>
 </template>
+
+<script setup>
+import NavigationDrawer from "~/components/NavigationDrawer.vue";
+</script>
