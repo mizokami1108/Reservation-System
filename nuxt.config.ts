@@ -13,7 +13,11 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: "2024-04-03",
-  css: ["bootstrap/dist/css/bootstrap.min.css"],
+  css: [
+    "bootstrap/dist/css/bootstrap.min.css",
+    "@mdi/font/css/materialdesignicons.css",
+    "vuetify/styles",
+  ],
   devtools: { enabled: true },
   build: {
     transpile: ["vuetify"],
