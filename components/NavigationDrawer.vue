@@ -36,13 +36,15 @@
     </v-navigation-drawer>
 
     <v-main>
+      <TheToast />
       <slot />
     </v-main>
   </v-app>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useDrawerStore } from "~/stores/drawerStore";
+import TheToast from "~/components/Toast/Toast.vue";
 
 const drawerStore = useDrawerStore();
 </script>
